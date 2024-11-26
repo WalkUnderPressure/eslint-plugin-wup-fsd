@@ -21,12 +21,12 @@ npm i -D eslint-plugin-wup-fsd
 In your [configuration file](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file), import the plugin `eslint-plugin-wup-fsd` and add `wup-fsd` to the `plugins` key:
 
 ```js
-import EslintFsd from "eslint-plugin-wup-fsd";
+import eslintFsd from "eslint-plugin-wup-fsd";
 
 export default [
     {
         plugins: {
-            'wup-fsd': EslintFsd,
+            'wup-fsd': eslintFsd,
         }
     }
 ];
@@ -35,12 +35,12 @@ export default [
 Then configure the rules you want to use under the `rules` key.
 
 ```js
-import EslintFsd from "eslint-plugin-wup-fsd";
+import eslintFsd from "eslint-plugin-wup-fsd";
 
 export default [
     {
         plugins: {
-            'wup-fsd': EslintFsd,
+            'wup-fsd': eslintFsd,
         },
         rules: {
             "wup-fsd/rule-name": "warn"
